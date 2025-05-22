@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestec Engenharia</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+
+    <div id="video-overlay">
+        <div id="video-container">
+            <video class="video-intro" id="logo-intro-video" autoplay playsinline muted>
+                <source src="media/opening.mp4" type="video/mp4">
+                Seu navegador não suporta vídeos.
+            </video>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <div class="logo-banner">
+                <img src="imgs/logo-principal.png" alt="" class="logo-image">
+            </div>
+
+            <div class="hamburger" id="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <nav class="navigator" id="navigator">
+
+                <div class="menu-toggle" id="closeBtn">
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <ul>
+                    <li class="menu-item" data-url="#home">
+                        <a href="#home">Inicio</a>
+                    </li>
+                    <li class="menu-item" data-url="pages/sobre-nos/sobre-nos.html">
+                        <a href="pages/sobre-nos/sobre-nos.html">Quem somos</a>
+                    </li>
+                    <li class="menu-item" data-url="pages/services/services.html">
+                        <a href="pages/services/services.html">Serviços</a>
+                    </li>
+                    <li class="menu-item" data-url="#contato">
+                        <a href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="overlay-blur" id="overlayBlur"></div>
+
+            <div class="content_btn_contact">
+                <p>Fale conosco</p>
+                <img src="imgs/icons8-whatsapp-30.png" alt="">
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+            let video = document.getElementById("logo-intro-video");
+            let overlay = document.getElementById("video-overlay");
+
+            video.play().then(() => {
+                console.log("Vídeo iniciado com sucesso.");
+            }).catch(error => {
+                console.log("Erro ao iniciar o vídeo:", error);
+            });
+
+            video.addEventListener("ended", () => {
+                overlay.style.display = "none";
+            });
+
+            setTimeout(() => {
+                overlay.style.display = "none";
+            }, 2500);
+        });
+
+    </script>
+    <div>
+
+        <div class="video-banner-container">
+            <div id="home"></div>
+            <div class="video-banner">
+                <video src="media/banner.mp4" autoplay loop muted></video>
+                <img class="banner-img-mobile" src="imgs/banner-mobile.png" alt="Banner Mobile">
+                <div class="overlay"></div>
+                <div class="banner-container">
+                    <h1>SOLUÇÕES INTELIGENTES PARA ENGENHARIA E CONSTRUÇÃO</h1>
+                    <p>Oferecemos um portfólio completo de serviços, abrangendo consultoria, planejamento, execução,
+                        gerenciamento, laudos técnicos e regularização imobiliária. Conte com nossa sólida experiência
+                        para assegurar o sucesso e a conformidade do seu projeto.</p>
+                </div>
+                <div class="request-banner">
+                    <a href="about-us.html">Faça sua solicitação</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content_about">
+        <div class="section_description">
+            <div class="apresentation">
+                <div class="description_about">
+                    <h2>SOBRE NÓS</h2>
+                    <img src="imgs/gestec-sobre.png" alt="">
+                </div>
+
+            </div>
+
+            <p>
+                Na GESTEC ENGENHARIA, acreditamos que grandes projetos são construídos sobre confiança e excelência
+                técnica. Sediados em Maringá-PR, somos especialistas em Gestão e Execução de Obras para clientes em
+                diversas regiões do Brasil.
+
+                Mais do que entregar serviços, construímos relacionamentos duradouros. Pautamos nosso trabalho na
+                qualidade, na responsabilidade e no respeito absoluto aos seus prazos e objetivos. Cada projeto é uma
+                oportunidade de reafirmar nosso compromisso com a sua satisfação.
+
+                Conte com a GESTEC para soluções de engenharia inteligentes e eficazes.
+            </p>
+            <div class="content_about_btn">
+                    <button class="about_btn"><a href="sobre-nos.html" class="about-btn">Saiba mais</a></button>
+            </div>
+        </div>
+
+        <div class="section_about_img">
+            <img src="media/about-us-image.jpg" alt="">
+        </div>
+    </div>
+
+    <section class="content_solutions">
+        <h1 class="title_solutions">
+            Confira <span>nossas soluções</span>
+        </h1>
+        <p class="subtitle_solutions">
+            Execução e gerenciamento de obras e reformas em todo território nacional.
+        </p>
+
+        <div class="solutions_container">
+            <div class="solution_item">
+                <div class="solution_item_card1">
+                    <img src="imgs/black_icons8-fila-90.png" alt="Comercial">
+                    <h2>Gestão</h2>
+                    <p>
+                        Otimizamos cada etapa da sua construção para você economizar tempo, reduzir custos e
+                        evitar imprevistos.</p>
+                </div>
+            </div>
+
+            <div class="solution_item">
+                <div class="solution_item_card2">
+                    <img src="imgs/black_icons8-guindaste-90.png" alt="Industrial">
+                    <h2>Execução</h2>
+                    <p>
+                        Executamos sua obra dentro do prazo e orçamento, garantindo a melhor aplicação
+                        dos seus recursos.
+                    </p>
+                </div>
+            </div>
+
+            <div class="solution_item">
+                <div class="solution_item_card3">
+                    <img src="imgs/black_icons8-arquiteto-90.png" alt="Corporativo">
+                    <h2>Serviços Técnicos</h2>
+                    <p>
+                        Elaboramos laudos, desenvolvemos projetos e realizamos ensaios para garantir a qualidade,
+                        viabilidade e segurança da sua obra.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="last-contact-container">
+        <div id="contato"></div>
+        <div class="background-last-contact-container">
+            <img src="media/contact-image.jpg" alt="Imagem de contato">
+            <div class="contact-side">
+                <h1>Entre em contato<br><strong>com a GESTEC</strong></h1>
+                <h2>ENGENHARIA</h2>
+
+                <div class="contact-info">
+                    <div class="contact-info-item">
+                        <img src="imgs/icons8-gmail-30 (1).png" alt="Ícone e-mail">
+                        <a href="mailto:gestecengenharia@gestec.com.br">gestecengenharia@gestec.com.br</a>
+                    </div>
+                    <div class="white-contact-line"></div>
+                    <div class="contact-info-item">
+                        <img src="imgs/icons8-small-whatsapp-30.png" alt="Ícone WhatsApp">
+                        <span>+55 44 9 9901-2233</span>
+                    </div>
+                    <div class="white-contact-line"></div>
+                    <div class="contact-info-item">
+                        <img src="imgs/icons8-instagram-30 (1).png" alt="Ícone Instagram">
+                        <span>@gestec_engenharia</span>
+                    </div>
+                    <div class="white-contact-line"></div>
+                    <div class="contact-info-item">
+                        <img src="imgs/icons8-linkedin-30.png" alt="Ícone Facebook">
+                        <span>Gestec Engenharia</span>
+                    </div>
+                    <div class="white-line"></div>
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="right-contact-container-side">
+            <form id="orcamentoForm" class="form-box">
+                <h2>Solicite um orçamento</h2>
+                <input type="text" name="nome" placeholder="Seu nome*" required>
+                <input type="email" name="email" placeholder="Seu endereço de e-mail*" required>
+                <input type="text" name="cidade" placeholder="Cidade">
+                <input type="text" name="servico" placeholder="Serviço desejado*" required>
+                <textarea name="mensagem" placeholder="Descreva o que você está procurando*" required></textarea>
+                <button type="submit">Enviar formulário</button>
+                <p id="resposta" style="margin-top:10px;"></p>
+            </form>
+            <script>
+                document.getElementById('orcamentoForm').addEventListener('submit', function (e) {
+                    e.preventDefault(); // impede recarregamento da página
+
+                    const formData = new FormData(this);
+
+                    fetch('enviar.php', {
+                        method: 'POST',
+                        body: formData
+                    })
+                        .then(response => response.text())
+                        .then(data => {
+                            document.getElementById('resposta').textContent = data;
+                            this.reset(); // limpa o formulário
+                        })
+                        .catch(error => {
+                            document.getElementById('resposta').textContent = "Erro ao enviar. Tente novamente.";
+                            console.error('Erro:', error);
+                        });
+                });
+            </script>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-bottom">
+            Desenvolvido por Iceberg Soluções
+        </div>
+    </footer>
+    <script type="module" src="script.js"></script>
+    <script src="redirectPages.js"></script>
+    </div>
+
+
+
+</body>
+
+</html>

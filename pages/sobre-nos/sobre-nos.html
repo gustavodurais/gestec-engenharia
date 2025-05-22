@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre nós</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div id="video-overlay">
+        <div id="video-container">
+            <video class="video-intro" id="logo-intro-video" autoplay playsinline muted>
+                <source src="../../media/opening.mp4" type="video/mp4">
+                Seu navegador não suporta vídeos.
+            </video>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <div class="logo-banner">
+                <img src="../../imgs/logo.png" alt="" class="logo-image">
+            </div>
+
+            <div class="hamburger" id="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <nav class="navigator" id="navigator">
+
+                <div class="menu-toggle" id="closeBtn">
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <ul>
+                    <li>
+                        <a href="../../index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="../sobre-nos/sobre-nos.html">Quem somos</a>
+                    </li>
+                    <li>
+                        <a href="../services/services.html">Serviços</a>
+                    </li>
+                    <li>
+                        <a href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="overlay-blur" id="overlayBlur"></div>
+
+            <div class="content_btn_contact">
+                <p>Fale conosco</p>
+                <img src="../../imgs/icons8-whatsapp-30.png" alt="">
+            </div>
+
+        </div>
+    </div>
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+            let video = document.getElementById("logo-intro-video");
+            let overlay = document.getElementById("video-overlay");
+
+            video.play().then(() => {
+                console.log("Vídeo iniciado com sucesso.");
+            }).catch(error => {
+                console.log("Erro ao iniciar o vídeo:", error);
+            });
+
+            video.addEventListener("ended", () => {
+                overlay.style.display = "none";
+            });
+
+            setTimeout(() => {
+                overlay.style.display = "none";
+            }, 2500);
+        });
+
+    </script>
+
+    </div>
+
+    <section class="hero-clientes">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Sobre nós</h1>
+            <div class="scroll-down">
+                <span>&#8595;</span> <!-- seta para baixo -->
+            </div>
+        </div>
+    </section>
+
+    <section class="blue-section">
+        <div class="image-container">
+            <img src="../../media/service-img2.jpg" alt="Construção">
+        </div>
+        <div class="content-container">
+            <div class="content-item1">
+                <img src="../../imgs/icons8-fila-90.png"></imgs> <!-- Ícone relâmpago -->
+                <div class="text">
+                    <h3>Engenharia com propósito</h3>
+                    <p>Somos uma empresa de engenharia especializada na gestão completa de obras, com foco em
+                        infraestrutura e pavimentação.
+                    </p>
+                </div>
+            </div>
+            <div class="content-item2">
+                <img src="../../imgs/icons8-arquiteto-90.png"></img> <!-- Ícone de usuários -->
+                <div class="text">
+                    <h3>Planejamento de entrega</h3>
+                    <p>Acreditamos que um bom planejamento é a base para o sucesso de qualquer obra. Por isso,
+                        oferecemos soluções estratégicas em gestão de projetos e orçamentos
+                    </p>
+                </div>
+            </div>
+            <div class="content-item3">
+                <img src="../../imgs/icons8-guindaste-90.png"></img> <!-- Ícone de usuários -->
+                <div class="text">
+                    <h3>Construindo com inteligência</h3>
+                    <p>Com uma equipe técnica qualificada e experiência em obras públicas e privadas, unimos tecnologia,
+                        gestão e engenharia para executar obras com qualidade.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-second">
+        <div class="section-second-content">
+            <div class="second-text-block">
+                <h2>Transformamos projetos em soluções inteligentes para obras e pavimentação</h2>
+                <p>
+                    Na nossa empresa, a engenharia vai além da execução técnica. Atuamos com uma abordagem estratégica
+                    que une gestão de obras, planejamento eficiente e controle orçamentário rigoroso. Nosso compromisso
+                    é entregar infraestrutura de qualidade, com agilidade, segurança e foco em resultados duradouros.
+                </p>
+
+                <ul class="section-checks">
+                    <li>Planejamento inteligente</li>
+                    <li>Gestão orçamentária eficiente</li>
+                    <li>Execução de alta performance</li>
+                    <li>Planejamento estratégico</li>
+                </ul>
+            </div>
+
+            <div class="second-services">
+                <h3>Serviços</h3>
+                <p>
+                    Oferecemos soluções completas em engenharia com foco em eficiência, qualidade e cumprimento de
+                    prazos. Atuamos em todas as fases do projeto, desde o planejamento estratégico até a entrega final
+                    da obra. Com uma equipe técnica especializada e ferramentas modernas de gestão, garantimos um
+                    acompanhamento detalhado de cada etapa, sempre alinhados às normas técnicas e às necessidades do
+                    cliente.
+                </p>
+                <button><a href="../services/services.html">Saiba mais</a></button>
+            </div>
+        </div>
+    </section>
+
+    <div class="principles-principal-container">
+        <div class="principles-container">
+            <h1>NOSSOS PILARES QUE NOS SUSTENTAM</h1>
+            <p>
+                Na GESTEC ENGENHARIA, acreditamos que a engenharia de qualidade começa com valores sólidos. Nossa
+                atuação em
+                gestão, execução e serviços técnicos de engenharia é guiada por princípios que refletem quem somos e
+                como
+                nos relacionamos com nossos clientes, parceiros e a sociedade.
+
+                Integridade, Responsabilidade, Parceria, Excelência e Resultado são os pilares que sustentam cada
+                projeto
+                que entregamos. Valorizamos relações duradouras, construídas com confiança, respeito mútuo e comunicação
+                transparente.
+
+                Nosso compromisso é com a entrega de soluções técnicas de alto desempenho, com foco em eficiência,
+                segurança
+                e inovação. Acreditamos que cada desafio é uma oportunidade de superar expectativas e gerar impactos
+                positivos, tanto para nossos clientes quanto para o meio em que atuamos.
+
+                Com a GESTEC ENGENHARIA, você tem mais do que uma prestadora de serviços, tem um parceiro estratégico
+                com
+                foco em resultados concretos e sustentáveis.
+            </p>
+            <div class="tabs">
+                <div class="tab active" onclick="changeValue('integridade')">Parceria</div>
+                <div class="tab" onclick="changeValue('respeito')">Excelência</div>
+                <div class="tab" onclick="changeValue('parceria')">Integridade</div>
+                <div class="tab" onclick="changeValue('excelencia')">Resultado</div>
+                <div class="tab" onclick="changeValue('desafio')">Responsabilidade</div>
+            </div>
+
+            <div id="value-content" class="principles-content"
+                style="background-image: url('https://via.placeholder.com/1200x300?text=Integridade');">
+                <div class="principles-overlay"></div>
+                <div class="principles-text" id="value-text">
+                    Colocamos o Cliente no centro de nossas operações, ouvindo suas necessidades e assegurando que nosso
+                    trabalho gere resultados positivos para eles. Também recompensamos as pessoas na razão direta de
+                    seus
+                    resultados no longo prazo.
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const values = {
+                integridade: {
+                    text: "Cultivamos relacionamentos sólidos e de confiança com nossos clientes, colaboradores e fornecedores, buscando sempre o benefício mútuo e a colaboração para alcançar objetivos comuns."
+                },
+                respeito: {
+                    text: "Buscamos a melhoria contínua em todos os nossos processos e entregas, garantindo o mais alto padrão em tudo que fazemos, da concepção a entrega final de cada serviço."
+                },
+                parceria: {
+                    text: "Agimos com ética, transparência e honestidade em todas as nossas relações e atividades, construindo uma reputação baseada na confiança e no respeito."
+                },
+                excelencia: {
+                    text: "Focamos na entrega de soluções eficazes que gerem valor e resultados concretos para nossos clientes."
+                },
+                desafio: {
+                    text: "Assumimos o compromisso com a sustentabilidade, a segurança e o impacto positivo de nossas ações, tanto no ambiente de trabalho quanto nas comunidades em que atuamos."
+                }
+            };
+
+            function changeValue(key) {
+                // Atualiza imagem e texto
+                document.getElementById('value-content').style.backgroundImage = `url('${values[key].image}')`;
+                document.getElementById('value-text').innerText = values[key].text;
+
+                // Atualiza aba ativa
+                const tabs = document.querySelectorAll('.tab');
+                tabs.forEach(tab => tab.classList.remove('active'));
+                event.target.classList.add('active');
+            }
+        </script>
+    </div>
+
+    <div class="clients-container">
+        <div class="field-clients-flex">
+            <h1>UMA ESCOLHA DE CONFIANÇA</h1>
+            <p>Clientes que atestam nossa competência</p>
+
+            <div class="swiper-container">
+                <div class="swiper logos">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="../../imgs/der-parana.png" alt=""></div>
+                        <div class="swiper-slide"><img src="../../imgs/maia-melo-engenheria.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="../../imgs/enecon.png" alt=""></div>
+                        <div class="swiper-slide"><img src="../../imgs/prefeitura-maringa.png" alt=""></div>
+                        <div class="swiper-slide"><img src="../../imgs/prefeitura-colorado.png" alt=""></div>
+                        <div class="swiper-slide"><img src="../../imgs/auto-posto-vila-rica.png" alt=""></div>
+                        <div class="swiper-slide"><img src="../../imgs/taico.avif" alt=""></div>
+                        <div class="swiper-slide"><img src="../../imgs/marluc-construtora.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="../../imgs/be-moradia-do-futuro.png" alt=""></div>
+                        <div class="swiper-slide"><img src="../../imgs/concrebrasbras.png" alt=""></div>
+                        <div class="swiper-slide"><img src="../../imgs/votorantim-cimentos.png" alt=""></div>
+                        <div class="swiper-slide"><img src="../../imgs/gerdau.png" alt=""></div>
+                        <div class="swiper-slide"><img src="../../imgs/lbx-construtora.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            window.addEventListener('load', () => {
+                const swiper = new Swiper('.swiper', {
+                    slidesPerView: 1,
+                    loop: true,
+                    loopedSlides: 13,
+                    autoplay: {
+                        delay: 3000,
+                        disableOnInteraction: false,
+                    },
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                    breakpoints: {
+                        768: {
+                            slidesPerView: 3,
+                        },
+                        1024: {
+                            slidesPerView: 4,
+                        }
+                    }
+                });
+            });
+        </script>
+    </div>
+
+
+
+    <div class="last-contact-container">
+        <div class="background-last-contact-container">
+            <img src="../../media/contact-image.jpg" alt="Imagem de contato">
+            <div class="contact-side">
+                <h1>Entre em contato<br><strong>com a GESTEC</strong></h1>
+                <h2>ENGENHARIA</h2>
+
+                <div class="contact-info">
+                    <div class="contact-info-item">
+                        <img src="../../imgs/icons8-gmail-30 (1).png" alt="Ícone e-mail">
+                        <a href="mailto:gestecengenharia@gestec.com.br">gestecengenharia@gestec.com.br</a>
+                    </div>
+                    <div class="white-contact-line"></div>
+                    <div class="contact-info-item">
+                        <img src="../../imgs/icons8-small-whatsapp-30.png" alt="Ícone WhatsApp">
+                        <span>+55 44 9 9901-2233</span>
+                    </div>
+                    <div class="white-contact-line"></div>
+                    <div class="contact-info-item">
+                        <img src="../../imgs/icons8-instagram-30 (1).png" alt="Ícone Instagram">
+                        <span>@gestec_engenharia</span>
+                    </div>
+                    <div class="white-contact-line"></div>
+                    <div class="contact-info-item">
+                        <img src="../../imgs/icons8-linkedin-30.png" alt="Ícone Facebook">
+                        <span>Gestec Engenharia</span>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="right-contact-container-side">
+            <form id="orcamentoForm" class="form-box">
+                <h2>Solicite um orçamento</h2>
+                <input type="text" name="nome" placeholder="Seu nome*" required>
+                <input type="email" name="email" placeholder="Seu endereço de e-mail*" required>
+                <input type="text" name="cidade" placeholder="Cidade">
+                <input type="text" name="servico" placeholder="Serviço desejado*" required>
+                <textarea name="mensagem" placeholder="Descreva o que você está procurando*" required></textarea>
+                <button type="submit">Enviar formulário</button>
+                <p id="resposta" style="margin-top:10px;"></p>
+            </form>
+            <script>
+                document.getElementById('orcamentoForm').addEventListener('submit', function (e) {
+                    e.preventDefault(); // impede recarregamento da página
+
+                    const formData = new FormData(this);
+
+                    fetch('enviar.php', {
+                        method: 'POST',
+                        body: formData
+                    })
+                        .then(response => response.text())
+                        .then(data => {
+                            document.getElementById('resposta').textContent = data;
+                            this.reset(); // limpa o formulário
+                        })
+                        .catch(error => {
+                            document.getElementById('resposta').textContent = "Erro ao enviar. Tente novamente.";
+                            console.error('Erro:', error);
+                        });
+                });
+                window.addEventListener('DOMContentLoaded', () => {
+                    changeValue('integridade');
+                });
+            </script>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-bottom">
+            Desenvolvido por Iceberg Soluções
+        </div>
+    </footer>
+    <script type="module" src="../../script.js"></script>
+    </div>
+    <script>
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 50) {
+                header.classList.remove('transparent');
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+                header.classList.add('transparent');
+            }
+        });
+
+        // Aplica a classe correta quando a página carrega
+        document.addEventListener('DOMContentLoaded', function () {
+            const header = document.querySelector('.header');
+            if (window.scrollY <= 50) {
+                header.classList.add('transparent');
+            }
+        });
+    </script>
+
+
+
+
+</body>

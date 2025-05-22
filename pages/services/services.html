@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestec Engenharia</title>
+    <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div id="video-overlay">
+        <div id="video-container">
+            <video class="video-intro" id="logo-intro-video" autoplay playsinline muted>
+                <source src="../../media/opening.mp4" type="video/mp4">
+                Seu navegador não suporta vídeos.
+            </video>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <div class="logo-banner">
+                <img src="../../imgs/logo.png" alt="" class="logo-image">
+            </div>
+
+            <div class="hamburger" id="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <nav class="navigator" id="navigator">
+
+                <div class="menu-toggle" id="closeBtn">
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <ul>
+                    <li>
+                        <a href="../../index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="../sobre-nos/sobre-nos.html">Quem somos</a>
+                    </li>
+                    <li>
+                        <a href="../services/services.html">Serviços</a>
+                    </li>
+                    <li>
+                        <a href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="overlay-blur" id="overlayBlur"></div>
+
+            <div class="content_btn_contact">
+                <p>Fale conosco</p>
+                <img src="../../imgs/icons8-whatsapp-30.png" alt="">
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 50) {
+                header.classList.remove('transparent');
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+                header.classList.add('transparent');
+            }
+        });
+
+        // Aplica a classe correta quando a página carrega
+        document.addEventListener('DOMContentLoaded', function () {
+            const header = document.querySelector('.header');
+            if (window.scrollY <= 50) {
+                header.classList.add('transparent');
+            }
+        });
+    </script>
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+            let video = document.getElementById("logo-intro-video");
+            let overlay = document.getElementById("video-overlay");
+
+            video.play().then(() => {
+                console.log("Vídeo iniciado com sucesso.");
+            }).catch(error => {
+                console.log("Erro ao iniciar o vídeo:", error);
+            });
+
+            video.addEventListener("ended", () => {
+                overlay.style.display = "none";
+            });
+
+            setTimeout(() => {
+                overlay.style.display = "none";
+            }, 2500);
+        });
+
+    </script>
+
+    <section class="hero-clientes">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Serviços</h1>
+            <div class="scroll-down">
+                <span>&#8595;</span> <!-- seta para baixo -->
+            </div>
+        </div>
+    </section>
+
+    <section class="destaques">
+        <div class="card-destaque1">
+            <div class="icon-top">
+                <img src="../../imgs/icons8-engenharia-30.png" alt="Ícone 1">
+            </div>
+            <h3>Sua obra planejada com expertise</h3>
+            <p>Do projeto à execução, garantimos qualidade e cumprimento de prazos.</p>
+        </div>
+
+        <div class="card-destaque2">
+            <div class="icon-top">
+                <img src="../../imgs/icons8-edificio-30.png" alt="Ícone 2">
+            </div>
+            <h3>Consultoria e Laudos Técnicos</h3>
+            <p>Assessoria técnica especializada para atender normas e evitar riscos.</p>
+        </div>
+    </section>
+    </div>
+
+    <section id="servicos">
+        <div class="content-job">
+            <h1>NOSSOS SERVIÇOS</h1>
+
+            <div class="job-description">
+                <div class="info-job" data-service="planejamento">
+                    <img src="../../imgs/Test Passed.png" alt="">
+                    <p>Planejamento de obras</p>
+                </div>
+                <div class="info-job" data-service="gestao">
+                    <img src="../../imgs/Admin Settings Male.png" alt="">
+                    <p>Gestão de obras</p>
+                </div>
+                <div class="info-job" data-service="construcao">
+                    <img src="../../imgs/Constructing.png" alt="">
+                    <p>Construção de obras</p>
+                </div>
+                <div class="info-job" data-service="gestao-materiais">
+                    <img src="../../imgs/Brick Wall.png" alt="">
+                    <p>Gestão de materiais</p>
+                </div>
+                <div class="info-job" data-service="gestao-orcamento">
+                    <img src="../../imgs/News.png" alt="">
+                    <p>Gestão de orçamento</p>
+                </div>
+                <div class="info-job" data-service="pavimentacao">
+                    <img src="../../imgs/Road.png" alt="">
+                    <p>Pavimentação</p>
+                </div>
+                <div class="info-job" data-service="laudos-tecnicos">
+                    <img src="../../imgs/Debit Card.png" alt="">
+                    <p>Laudos técnicos</p>
+                </div>
+                <div class="info-job" data-service="reformas">
+                    <img src="../../imgs/Full Tool Storage Box.png" alt="">
+                    <p>Reformas</p>
+                </div>
+                <div class="info-job" data-service="consultoria">
+                    <img src="../../imgs/Group.png" alt="">
+                    <p>Consultoria</p>
+                </div>
+                <div class="info-job" data-service="ar-condicionado">
+                    <img src="../../imgs/Air.png" alt="">
+                    <p>ATR para ar condicionado</p>
+                </div>
+                <div class="info-job" data-service="topografia">
+                    <img src="../../imgs/National Park.png" alt="">
+                    <p>Topografia</p>
+                </div>
+                <div class="info-job" data-service="regularizacao">
+                    <img src="../../imgs/Home Automation.png" alt="">
+                    <p>Regularização de imóveis</p>
+                </div>
+            </div>
+
+
+            
+        </div>
+    </section>
+
+     <div class="services-container">
+        
+        <div class="field-services">
+            <div class="services">
+                <div class="img-service">
+                    <img src="../../imgs/service1.png" alt="">
+                </div>
+                <div class="description-service" id="description-service-first">
+                    <h1>Nisi perferendis aspernatur reprehenderit</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur  reprehenderit.<br/> Nisi perferendis aspernatur reprehenderit consequuntur dolor sit amet conse.</p>
+                    <button class="btn-services">Saiba mais</button>
+                </div>
+            </div>
+
+            <div class="services">
+                <div class="description-service">
+                    <h1>Nisi perferendis aspernatur reprehenderit</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur  reprehenderit.<br/> Nisi perferendis aspernatur reprehenderit consequuntur dolor sit amet conse.</p>
+                    <button class="btn-services">Saiba mais</button>
+                </div>
+                <div class="img-service">
+                    <img src="../../imgs/service2.png" alt="">
+                </div>
+            </div>
+
+            <div class="services">
+                <div class="img-service">
+                    <img src="../../imgs/service3.png" alt="">
+                </div>
+                <div class="description-service" id="description-service-three">
+                    <h1>Nisi perferendis aspernatur reprehenderit</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur  reprehenderit.<br/> Nisi perferendis aspernatur reprehenderit consequuntur dolor sit amet conse.</p>
+                    <button class="btn-services">Saiba mais</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="clients-container">
+        <div class="field-clients-flex">
+            <h1>UMA ESCOLHA DE CONFIANÇA</h1>
+            <p>Clientes que atestam nossa competência</p>
+    
+            <div class="swiper-container">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper logos">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="../../imgs/der-parana.png" alt=""></div>
+                        <div class="swiper-slide"><img src="../../imgs/maia-melo-engenheria.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="../../imgs/enecon.png" alt=""></div>
+                        <div class="swiper-slide"><img src="../../imgs/prefeitura-maringa.png" alt=""></div>
+                        <div class="swiper-slide"><img src="../../imgs/prefeitura-colorado.png" alt=""></div>
+                        <div class="swiper-slide"><img src="../../imgs/auto-posto-vila-rica.png" alt=""></div>
+                        <div class="swiper-slide"><img src="../../imgs/taico.avif" alt=""></div>
+                        <div class="swiper-slide"><img src="../../imgs/marluc-construtora.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="../../imgs/be-moradia-do-futuro.png" alt=""></div>
+                        <div class="swiper-slide"><img src="../../imgs/concrebrasbras.png" alt=""></div>
+                        <div class="swiper-slide"><img src="../../imgs/votorantim-cimentos.png" alt=""></div>
+                        <div class="swiper-slide"><img src="../../imgs/gerdau.png" alt=""></div>
+                        <div class="swiper-slide"><img src="../../imgs/lbx-construtora.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <div class="white-line"></div>
+    <div class="last-contact-container">
+        <div class="background-last-contact-container">
+            <img src="../../media/contact-image.jpg" alt="Imagem de contato">
+            <div class="contact-side">
+                <h1>Entre em contato<br><strong>com a GESTEC</strong></h1>
+                <h2>ENGENHARIA</h2>
+
+                <div class="contact-info">
+                    <div class="contact-info-item">
+                        <img src="../../imgs/icons8-gmail-30 (1).png" alt="Ícone e-mail">
+                        <a href="mailto:gestecengenharia@gestec.com.br">gestecengenharia@gestec.com.br</a>
+                    </div>
+                    <div class="white-contact-line"></div>
+                    <div class="contact-info-item">
+                        <img src="../../imgs/icons8-small-whatsapp-30.png" alt="Ícone WhatsApp">
+                        <span>+55 44 9 9901-2233</span>
+                    </div>
+                    <div class="white-contact-line"></div>
+                    <div class="contact-info-item">
+                        <img src="../../imgs/icons8-instagram-30 (1).png" alt="Ícone Instagram">
+                        <span>@gestec_engenharia</span>
+                    </div>
+                    <div class="white-contact-line"></div>
+                    <div class="contact-info-item">
+                        <img src="../../imgs/icons8-linkedin-30.png" alt="Ícone Facebook">
+                        <span>Gestec Engenharia</span>
+                    </div>
+                    <div class="white-line"></div>
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="right-contact-container-side">
+            <form id="orcamentoForm" class="form-box">
+                <h2>Solicite um orçamento</h2>
+                <input type="text" name="nome" placeholder="Seu nome*" required>
+                <input type="email" name="email" placeholder="Seu endereço de e-mail*" required>
+                <input type="text" name="cidade" placeholder="Cidade">
+                <input type="text" name="servico" placeholder="Serviço desejado*" required>
+                <textarea name="mensagem" placeholder="Descreva o que você está procurando*" required></textarea>
+                <button type="submit">Enviar formulário</button>
+                <p id="resposta" style="margin-top:10px;"></p>
+            </form>
+            <script>
+                document.getElementById('orcamentoForm').addEventListener('submit', function (e) {
+                    e.preventDefault(); // impede recarregamento da página
+
+                    const formData = new FormData(this);
+
+                    fetch('enviar.php', {
+                        method: 'POST',
+                        body: formData
+                    })
+                        .then(response => response.text())
+                        .then(data => {
+                            document.getElementById('resposta').textContent = data;
+                            this.reset(); // limpa o formulário
+                        })
+                        .catch(error => {
+                            document.getElementById('resposta').textContent = "Erro ao enviar. Tente novamente.";
+                            console.error('Erro:', error);
+                        });
+                });
+            </script>
+        </div>
+    </div>
+    <div class="white-line"></div>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-column">
+                <img src="../../imgs/logo1.png" alt="Gestec Engenharia" class="footer-logo" />
+            </div>
+            <div class="footer-column">
+                <h3 class="footer-column-icons">Redes Sociais</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="../../imgs/icons8-instagram-30 (1).png" alt="Instagram" /></a>
+                    <a href="#"><img src="../../imgs/icons8-linkedin-30.png" alt="LinkedIn" /></a>
+                    <a href="#"><img src="../../imgs/icons8-small-whatsapp-30.png" alt="WhatsApp" /></a>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h3 class="footer-column-links">Outros</h3>
+                <ul class="footer-links">
+                    <li><a href="#">&#9658; Início</a></li>
+                    <li><a href="#">&#9658; Quem somos</a></li>
+                    <li><a href="#">&#9658; Serviços</a></li>
+                    <li><a href="#">&#9658; Contato</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            Desenvolvido por Iceberg Soluções
+        </div>
+    </footer>
+
+    <script type="module" src="../../script.js"></script>
+
+</body>
+
+</html>
