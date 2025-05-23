@@ -357,6 +357,16 @@ transition: all 300ms ease-in-out;
     overflow: hidden;
 }
 
+.video-banner::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 80px;
+  width: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), var(--color-primary));
+  z-index: 1;
+}
+
 .video-banner video {
     position: absolute;
     top: 0;
@@ -895,6 +905,8 @@ transition: all 300ms ease-in-out;
   gap: 4rem;
   flex-wrap: wrap;
 }
+
+
 
 .solution_item {
   max-width: 300px;
