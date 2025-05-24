@@ -85,6 +85,20 @@ body {
     align-items: center;
     z-index: 999;
     position: fixed;
+    transition: background-color 0.4s ease;
+}
+
+.header.scrolled::after {
+  content: "";
+  position: absolute;
+  bottom: -3rem;
+  height: 50px;
+  width: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), var(--color-primary));
+  opacity: 0.9;
+  z-index: 5;
+  transform: rotate(180deg);
+  transition: background-color 0.4s ease;
 }
 
 .header.transparent {
@@ -93,7 +107,7 @@ body {
 }
 
 .header.scrolled {
-    background-color: #204062; /* azul sólido */
+    background-color: var(--color-primary); /* azul sólido */
     transition: background-color 0.4s ease;
 }
 
