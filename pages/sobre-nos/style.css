@@ -500,7 +500,8 @@ body {
     font-size: 0.9em;
     color: #d0d7e1;
     font-family: 'inter';
-    max-width: 40rem;
+    max-width: 30rem;
+    text-align: justify;
 }
 
 @media(max-width: 1460px) {
@@ -628,6 +629,7 @@ body {
   color: #1a1a1a;
   margin-bottom: 20px;
   font-family: 'lato-black';
+  
 }
 
 .second-text-block p {
@@ -635,6 +637,7 @@ body {
   margin-bottom: 20px;
   line-height: 1.6;
   font-family: 'inter';
+  text-align: justify;
 }
 
 .section-checks {
@@ -679,6 +682,7 @@ body {
   font-family: 'inter';
   color: #444;
   margin-bottom: 20px;
+  text-align: justify;
 }
 
 .second-services button {
@@ -774,6 +778,8 @@ body {
   margin: auto;
   color:rgb(227, 227, 227);
   font-size: 1.1rem;
+  text-align: justify;
+  line-height: 1.5;
 }
 
 .principles-container h1 {
@@ -799,6 +805,7 @@ body {
   margin-top: 3rem;
   color: var(--portfolio-color);
   transition: all 300ms ease-in-out;
+  letter-spacing: 0.7px;
 }
 
 .tabs div.active {
@@ -809,14 +816,16 @@ body {
 
 .principles-content {
   position: relative;
-  color: white;
+  color: var(--portfolio-color);
   text-align: center;
   padding: 60px 30px;
   background-size: cover;
   background-position: center;
   min-height: 80px;
+  font-weight: bold;
   transition: background-image 0.5s ease-in-out;
-  background-color: var(--text-border-color);
+  background-color: white;
+  letter-spacing: 0.7px;
 }
 
 .principles-text {
