@@ -27,24 +27,22 @@ body {
     overflow-x: hidden;
 }
 
+
+
 @font-face {
-    font-family: 'inter-regular';
-    src: url(fonts/Inter_28pt-Regular.ttf);
+    font-family: 'lato-bold';
+    src: url(fonts/Lato-Bold.ttf);
 }
 
 @font-face {
-    font-family: 'inter-semiBold';
-    src: url(fonts/Inter_24pt-SemiBold.ttf);
+    font-family: 'lato-regular';
+    src: url(fonts/Lato-Regular.ttf);
 }
 
-@font-face {
-    font-family: 'inter-bold';
-    src: url(fonts/Inter_28pt-Bold.ttf);
-}
 
 @font-face {
-    font-family: 'inter-extraBold';
-    src: url(fonts/Inter_28pt-ExtraBold.ttf);
+    font-family: 'lato-black';
+    src: url(fonts/Lato-Black.ttf);
 }
 
 
@@ -87,7 +85,7 @@ body {
   position: fixed;
 }
 
-.header::after {
+/* .header::after {
   content: "";
   position: absolute;
   bottom: -3rem;
@@ -97,7 +95,7 @@ body {
   opacity: 0.9;
   z-index: 5;
   transform: rotate(180deg);
-}
+} */
 
 .logo-banner {
   padding-left: 4rem;
@@ -137,7 +135,7 @@ transition: all 300ms ease-in-out;
 .navigator a {
   color: #ffff;
   font-size: 0.9rem;
-  font-family: 'inter-bold';
+  font-family: 'lato-bold';
   transition: all 0.2s;
 }
 
@@ -158,7 +156,7 @@ transition: all 300ms ease-in-out;
   justify-content: center;
   align-items: center;
   gap: 0.3rem;
-  font-family: 'inter-bold';
+  font-family: 'lato-bold';
   font-size: 0.9rem;
   cursor: pointer;
   transition: all 400ms ease-in-out;
@@ -370,7 +368,7 @@ transition: all 300ms ease-in-out;
     overflow: hidden;
 }
 
-.video-banner::after {
+/* .video-banner::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -378,7 +376,7 @@ transition: all 300ms ease-in-out;
   width: 100%;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0), var(--color-primary));
   z-index: 1;
-}
+} */
 
 .video-banner video {
     position: absolute;
@@ -419,7 +417,7 @@ transition: all 300ms ease-in-out;
     left: 5rem;
     transform: translateY(-50%);
     font-size: 1.8rem;
-    font-family: 'inter';
+    font-family: 'lato-bold';
     max-width: 60rem;
   }
 
@@ -432,7 +430,7 @@ transition: all 300ms ease-in-out;
     left: 5rem;
     transform: translateY(-50%);
     font-size: 1.2rem;
-    font-family: 'inter';
+    font-family: 'lato-regular';
     max-width: 60rem;
 }
 
@@ -445,7 +443,7 @@ transition: all 300ms ease-in-out;
     left: 5rem;
     transform: translateY(-50%);
     font-size: 1.2em;
-    font-family: 'inter';
+    font-family: 'lato-regular';
     background-color: var(--color-primary);
     padding: 1rem;
     display: block;
@@ -484,70 +482,7 @@ transition: all 300ms ease-in-out;
     color: white;
     text-decoration: none;
 }
-
-.destaques {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    position: relative;
-    z-index: 2;
-    bottom: 4rem;
-    font-family: 'inter';
-  }
   
-  .card-destaque1 {
-    margin-bottom: 5rem;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 10px 30px var(--color-primary);
-    padding: 2rem 1.5rem;
-    width: 30rem;
-    position: relative;
-    text-align: center;
-    right: 3rem;
-    transition: all 300ms ease-in-out;
-  }
-
-  .card-destaque1:hover {
-    transform: scale(1.15);
-    transition: all 300ms ease-in-out;
-  }
-
-  .card-destaque2 {
-    margin-bottom: 5rem;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 10px 30px var(--color-primary);
-    padding: 2rem 1.5rem;
-    width: 30rem;
-    position: relative;
-    text-align: center;
-    left: 3rem;
-    transition: all 300ms ease-in-out;
-  }
-
-  .card-destaque2:hover {
-    transform: scale(1.15);
-    transition: all 300ms ease-in-out;
-  }
-  
-  .icon-top {
-    width: 50px;
-    height: 50px;
-    margin: 0 auto;
-    margin-top: -40px;
-    background: #ffffff;
-    border-radius: 50%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .icon-top img {
-    width: 24px;
-    height: 24px;
-  }
 
   .banner-img-mobile {
     display: none;
@@ -586,31 +521,6 @@ transition: all 300ms ease-in-out;
 
 @media(max-width: 680px) {
 
-  .icon-top {
-    margin-top: -3rem;
-  }
-
-  .destaques {
-    bottom: 5rem;
-    gap: 1rem;
-  }
-
-  .destaques h3 {
-    padding-top: 0.5rem;
-  }
-
-  .card-destaque1 {
-    width: 70%;
-    left: 0;
-    height: 10.2rem;
-  }
-
-  .card-destaque2 {
-    width: 70%;
-    left: 0;
-    height: 10.2rem;
-  }
-  
   .banner-container p, .request-banner a, .banner-container h1 {
     width: 20rem;
     left: 50%;
@@ -634,10 +544,6 @@ transition: all 300ms ease-in-out;
 
   .video-banner video {
     display: none;
-  }
-
-  .destaques {
-    bottom: 5rem;
   }
 
   .banner-container {
@@ -695,7 +601,7 @@ transition: all 300ms ease-in-out;
     height: 2.8rem;
     margin-top: 1.8rem;
     border: none;
-    font-family: 'inter';
+    font-family: 'lato-regular';
     cursor: pointer;
     transition: all 1s;
     border: solid var(--color-primary) 2px;
@@ -761,7 +667,7 @@ transition: all 300ms ease-in-out;
 
 .description_about h2 {
     color: #ffff;
-    font-family: 'inter-extraBold';
+    font-family: 'lato-bold';
 }
 
 .section_description p {
@@ -892,7 +798,7 @@ transition: all 300ms ease-in-out;
   padding: 5rem 2rem;
   text-align: center;
   color: var(--color-primary);
-  font-family: 'Inter', sans-serif;
+  font-family: 'lato-regular', sans-serif;
 }
 
 .title_solutions {
@@ -972,6 +878,7 @@ transition: all 300ms ease-in-out;
 
 .solution_item p {
   font-size: 1rem;
+  font-family: 'inter';
   font-weight: 300;
   line-height: 1.5;
 }
@@ -981,7 +888,7 @@ transition: all 300ms ease-in-out;
   font-weight: bold;
   margin-bottom: 40px;
   margin-top: 5rem;
-  font-family: 'inter-bold';
+  font-family: 'lato-regular';
 }
 
 .gestec-grid {
@@ -1002,12 +909,12 @@ transition: all 300ms ease-in-out;
   height: 8rem;
   font-size: 14px;
   color: white;
-  font-family: 'Inter', sans-serif;
+  font-family: 'lato-regular', sans-serif;
 }
 
 
 .gestec-card p {
-  font-family: 'inter';
+  font-family: 'lato-regular';
 }
 
 .gestec-whatsapp {
@@ -1136,6 +1043,7 @@ transition: all 300ms ease-in-out;
 }
   
   .contact-side h1 {
+    font-family: 'lato-bold';
     font-size: 28px;
     font-weight: 700;
     line-height: 1.3;
@@ -1145,12 +1053,14 @@ transition: all 300ms ease-in-out;
   .contact-side h1 strong {
     display: block;
     font-size: 32px;
+    font-family: 'lato-black';
     letter-spacing: 1px;
     margin-top: 5px;
   }
   
   .contact-side h2 {
     font-size: 16px;
+    font-family: 'lato-black';
     font-weight: 400;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -1192,6 +1102,7 @@ transition: all 300ms ease-in-out;
     color: #ffffff;
     text-decoration: none;
     transition: color 0.3s ease;
+    font-family: 'inter';
   }
   
   .contact-info-item a:hover {
@@ -1229,6 +1140,7 @@ transition: all 300ms ease-in-out;
   .form-box h2 {
     text-align: center;
     margin-bottom: 20px;
+    font-family: 'lato-bold';
   }
   
   input, select, textarea, button {
@@ -1237,7 +1149,9 @@ transition: all 300ms ease-in-out;
     margin: 10px 0;
     border: none;
     border-radius: 5px;
+    outline: none;
     transition: all 300ms ease-in-out;
+    font-family: 'inter';
   }
 
   input:hover, select:hover, textarea:hover, button:hover {

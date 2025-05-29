@@ -113,30 +113,13 @@
     <section class="hero-clientes">
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1>Serviços</h1>
+            <h2>SERVIÇOS</h2>
             <div class="scroll-down">
                 <span>&#8595;</span> <!-- seta para baixo -->
             </div>
         </div>
     </section>
 
-    <section class="destaques">
-        <div class="card-destaque1">
-            <div class="icon-top">
-                <img src="../../imgs/icons8-engenharia-30.png" alt="Ícone 1">
-            </div>
-            <h3>Sua obra planejada com expertise</h3>
-            <p>Do projeto à execução, garantimos qualidade e cumprimento de prazos.</p>
-        </div>
-
-        <div class="card-destaque2">
-            <div class="icon-top">
-                <img src="../../imgs/icons8-edificio-30.png" alt="Ícone 2">
-            </div>
-            <h3>Consultoria e Laudos Técnicos</h3>
-            <p>Assessoria técnica especializada para atender normas e evitar riscos.</p>
-        </div>
-    </section>
     </div>
 
     <section id="servicos">
@@ -202,7 +185,7 @@
     <div class="services-container">
 
         <div class="field-services">
-            <div class="services">
+            <div class="services-provided">
                 <div class="img-service">
                     <img src="../../imgs/service1.png" alt="">
                 </div>
@@ -214,7 +197,7 @@
                 </div>
             </div>
 
-            <div class="services">
+            <div class="services-provided">
                 <div class="description-service">
                     <h1>Nisi perferendis aspernatur reprehenderit</h1>
                     <p>Lorem ipsum dolor sit amet consectetur reprehenderit.<br /> Nisi perferendis aspernatur
@@ -226,7 +209,7 @@
                 </div>
             </div>
 
-            <div class="services">
+            <div class="services-provided">
                 <div class="img-service">
                     <img src="../../imgs/service3.png" alt="">
                 </div>
@@ -247,8 +230,6 @@
             <p>Clientes que atestam nossa competência</p>
 
             <div class="swiper-container">
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
                 <div class="swiper logos">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide"><img src="../../imgs/der-parana.png" alt=""></div>
@@ -267,6 +248,31 @@
                     </div>
                 </div>
             </div>
+            <script>
+            window.addEventListener('load', () => {
+                const swiper = new Swiper('.swiper', {
+                    slidesPerView: 2,
+                    loop: true,
+                    loopedSlides: 13,
+                    autoplay: {
+                        delay: 3000,
+                        disableOnInteraction: false,
+                    },
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                    breakpoints: {
+                        768: {
+                            slidesPerView: 3,
+                        },
+                        1024: {
+                            slidesPerView: 4,
+                        }
+                    }
+                });
+            });
+        </script>
         </div>
     </div>
 
