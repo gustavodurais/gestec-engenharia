@@ -85,19 +85,6 @@ html {
     transition: background-color 0.4s ease;
 }
 
-/* .header.scrolled::after {
-  content: "";
-  position: absolute;
-  bottom: -3rem;
-  height: 50px;
-  width: 100%;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), var(--color-primary));
-  opacity: 0.9;
-  z-index: 5;
-  transform: rotate(180deg);
-  transition: background-color 0.4s ease;
-} */
-
 .header.transparent {
     background-color: rgba(32, 64, 98, 0.2); /* cor azul com transparência */
     transition: background-color 0.4s ease;
@@ -358,7 +345,7 @@ html {
   position: relative;
   background: url('../../media/engenheiros-servicos.jpg') center bottom/cover no-repeat;
   background-position: center 10%;
-  height: 100vh;
+  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -373,15 +360,15 @@ html {
   font-size: 30px;
 }
 
-/* .hero-clientes::after {
+ .hero-clientes::after {
   content: "";
   position: absolute;
-  bottom: 8%;
+  bottom: 0%;
   height: 80px;
   width: 100%;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), var(--color-primary));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), white);
   z-index: 1;
-} */
+} 
 
 .hero-overlay {
   position: absolute;
@@ -582,6 +569,7 @@ html {
 .description-service p {
   padding-top: 15px;
   padding-bottom: 15px;
+  padding-right: 2rem;
   font-family: 'inter';
 }
 

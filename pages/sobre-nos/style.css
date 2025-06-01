@@ -85,19 +85,6 @@ body {
     transition: background-color 0.4s ease;
 }
 
-/* .header.scrolled::after {
-  content: "";
-  position: absolute;
-  bottom: -3rem;
-  height: 50px;
-  width: 100%;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), var(--color-primary));
-  opacity: 0.9;
-  z-index: 5;
-  transform: rotate(180deg);
-  transition: background-color 0.4s ease;
-} */
-
 .header.transparent {
     background-color: rgba(32, 64, 98, 0.2); /* cor azul com transparência */
     transition: background-color 0.4s ease;
@@ -372,6 +359,16 @@ body {
   color: white;
   font-family: 'inter', sans-serif;
 }
+
+ .hero-clientes::after {
+  content: "";
+  position: absolute;
+  bottom: 0%;
+  height: 80px;
+  width: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #254163);
+  z-index: 1;
+} 
 
 .hero-overlay {
   position: absolute;

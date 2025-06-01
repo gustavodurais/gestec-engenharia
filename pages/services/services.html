@@ -122,6 +122,50 @@
 
     </div>
 
+
+
+    <div class="services-container">
+
+        <div class="field-services">
+            <div class="services-provided">
+                <div class="img-service">
+                    <img src="../../imgs/service1.png" alt="">
+                </div>
+                <div class="description-service" id="description-service-first">
+                    <h1>Nisi perferendis aspernatur reprehenderit</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur reprehenderit.<br /> Nisi perferendis aspernatur
+                        reprehenderit consequuntur dolor sit amet conse.</p>
+                    <a href="#contato" class="btn-services">Saiba mais</a>
+                </div>
+            </div>
+
+            <div class="services-provided">
+                <div class="description-service">
+                    <h1>Nisi perferendis aspernatur reprehenderit</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur reprehenderit.<br /> Nisi perferendis aspernatur
+                        reprehenderit consequuntur dolor sit amet conse.</p>
+                    <a href="#contato" class="btn-services">Saiba mais</a>
+                </div>
+                <div class="img-service">
+                    <img src="../../imgs/service2.png" alt="">
+                </div>
+            </div>
+
+            <div class="services-provided">
+                <div class="img-service">
+                    <img src="../../imgs/service3.png" alt="">
+                </div>
+                <div class="description-service" id="description-service-three">
+                    <h1>Nisi perferendis aspernatur reprehenderit</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur reprehenderit.<br /> Nisi perferendis aspernatur
+                        reprehenderit consequuntur dolor sit amet conse.</p>
+                    <a href="#contato" class="btn-services">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
     <section id="servicos">
         <div class="content-job">
             <h1>NOSSOS SERVIÇOS</h1>
@@ -182,48 +226,6 @@
         </div>
     </section>
 
-    <div class="services-container">
-
-        <div class="field-services">
-            <div class="services-provided">
-                <div class="img-service">
-                    <img src="../../imgs/service1.png" alt="">
-                </div>
-                <div class="description-service" id="description-service-first">
-                    <h1>Nisi perferendis aspernatur reprehenderit</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur reprehenderit.<br /> Nisi perferendis aspernatur
-                        reprehenderit consequuntur dolor sit amet conse.</p>
-                    <a href="#contato" class="btn-services">Saiba mais</a>
-                </div>
-            </div>
-
-            <div class="services-provided">
-                <div class="description-service">
-                    <h1>Nisi perferendis aspernatur reprehenderit</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur reprehenderit.<br /> Nisi perferendis aspernatur
-                        reprehenderit consequuntur dolor sit amet conse.</p>
-                    <a href="#contato" class="btn-services">Saiba mais</a>
-                </div>
-                <div class="img-service">
-                    <img src="../../imgs/service2.png" alt="">
-                </div>
-            </div>
-
-            <div class="services-provided">
-                <div class="img-service">
-                    <img src="../../imgs/service3.png" alt="">
-                </div>
-                <div class="description-service" id="description-service-three">
-                    <h1>Nisi perferendis aspernatur reprehenderit</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur reprehenderit.<br /> Nisi perferendis aspernatur
-                        reprehenderit consequuntur dolor sit amet conse.</p>
-                    <a href="#contato" class="btn-services">Saiba mais</a>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
     <div class="clients-container">
         <div class="field-clients-flex">
             <h1>UMA ESCOLHA DE CONFIANÇA</h1>
@@ -249,30 +251,30 @@
                 </div>
             </div>
             <script>
-            window.addEventListener('load', () => {
-                const swiper = new Swiper('.swiper', {
-                    slidesPerView: 2,
-                    loop: true,
-                    loopedSlides: 13,
-                    autoplay: {
-                        delay: 3000,
-                        disableOnInteraction: false,
-                    },
-                    navigation: {
-                        nextEl: '.swiper-button-next',
-                        prevEl: '.swiper-button-prev',
-                    },
-                    breakpoints: {
-                        768: {
-                            slidesPerView: 3,
+                window.addEventListener('load', () => {
+                    const swiper = new Swiper('.swiper', {
+                        slidesPerView: 2,
+                        loop: true,
+                        loopedSlides: 13,
+                        autoplay: {
+                            delay: 3000,
+                            disableOnInteraction: false,
                         },
-                        1024: {
-                            slidesPerView: 4,
+                        navigation: {
+                            nextEl: '.swiper-button-next',
+                            prevEl: '.swiper-button-prev',
+                        },
+                        breakpoints: {
+                            768: {
+                                slidesPerView: 3,
+                            },
+                            1024: {
+                                slidesPerView: 4,
+                            }
                         }
-                    }
+                    });
                 });
-            });
-        </script>
+            </script>
         </div>
     </div>
 
