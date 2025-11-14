@@ -394,6 +394,7 @@ transition: all 300ms ease-in-out;
 .request-banner {
     position: relative;
     z-index: 2;
+    justify-content: center;
 }
 
 .banner-container h1 {
@@ -1718,4 +1719,13 @@ input:disabled + .slider {
         padding: 0.3rem 0.6rem;
         font-size: 0.65rem;
     }
+}
+
+.justify {
+  text-align: justify;
+}
+
+.banner-container p.justify {
+    text-align: justify !important;
+    text-justify: inter-word;
 }
