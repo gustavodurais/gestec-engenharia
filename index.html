@@ -103,7 +103,7 @@
                         para assegurar o sucesso e a conformidade do seu projeto.</p>
                 </div>
                 <div class="request-banner">
-                    <a href="about-us.html">Faça sua solicitação</a>
+                    <a href="pages/sobre-nos/sobre-nos.html">Faça sua solicitação</a>
                 </div>
             </div>
         </div>
@@ -262,9 +262,63 @@
     </a>
     <script type="module" src="script.js"></script>
     <script src="redirectPages.js"></script>
+    <script src="cookies.js"></script>
     </div>
 
+    <div id="cookie-banner" class="cookie-banner">
+        <div class="cookie-content">
+            <p>Nós utilizamos cookies para melhorar sua experiência em nosso site. Ao continuar navegando, você concorda
+                com nossa <a href="politica-cookies.html" target="_blank">Política de Cookies</a>.</p>
+            <div class="cookie-buttons">
+                <button id="accept-cookies" class="cookie-btn accept">Aceitar Todos</button>
+                <button id="reject-cookies" class="cookie-btn reject">Rejeitar</button>
+                <button id="customize-cookies" class="cookie-btn customize">Personalizar</button>
+            </div>
+        </div>
+    </div>
 
+    <!-- Cookie Settings Modal -->
+    <div id="cookie-modal" class="cookie-modal">
+        <div class="modal-content">
+            <h3>Preferências de Cookies</h3>
+            <div class="cookie-options">
+                <div class="cookie-option">
+                    <label class="cookie-switch">
+                        <input type="checkbox" id="necessary-cookies" checked disabled>
+                        <span class="slider"></span>
+                    </label>
+                    <div class="cookie-info">
+                        <strong>Cookies Necessários</strong>
+                        <span>Essenciais para o funcionamento do site</span>
+                    </div>
+                </div>
+                <div class="cookie-option">
+                    <label class="cookie-switch">
+                        <input type="checkbox" id="analytics-cookies">
+                        <span class="slider"></span>
+                    </label>
+                    <div class="cookie-info">
+                        <strong>Cookies Analíticos</strong>
+                        <span>Nos ajudam a melhorar o site</span>
+                    </div>
+                </div>
+                <div class="cookie-option">
+                    <label class="cookie-switch">
+                        <input type="checkbox" id="marketing-cookies">
+                        <span class="slider"></span>
+                    </label>
+                    <div class="cookie-info">
+                        <strong>Cookies de Marketing</strong>
+                        <span>Para conteúdo personalizado</span>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-buttons">
+                <button id="save-preferences" class="cookie-btn accept">Salvar Preferências</button>
+                <button id="close-modal" class="cookie-btn reject">Fechar</button>
+            </div>
+        </div>
+    </div>
 
 </body>
 
