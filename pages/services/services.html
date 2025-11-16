@@ -125,7 +125,7 @@
 
 
 
-    <div class="services-container">
+    <!--<div class="services-container">
 
         <div class="field-services">
             <div class="services-provided">
@@ -165,7 +165,61 @@
             </div>
         </div>
 
+    </div>-->
+
+    <div class="services-container">
+  <div class="services-carousel-container">
+    <div class="swiper services-swiper">
+      <div class="swiper-wrapper">
+        <!-- Slide 1: Gestão -->
+        <div class="swiper-slide">
+          <div class="service-slide">
+            <div class="img-service">
+              <img src="../../imgs/service1.png" alt="Serviço de Gestão">
+            </div>
+            <div class="description-service">
+              <h1>Gestão</h1>
+              <p>Otimizamos cada etapa da sua construção para você economizar tempo, reduzir custos e evitar imprevistos.</p>
+              <a href="#contato" class="btn-services">Saiba mais</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Slide 2: Execução -->
+        <div class="swiper-slide">
+          <div class="service-slide">
+            <div class="img-service">
+              <img src="../../imgs/service2.png" alt="Serviço de Execução">
+            </div>
+            <div class="description-service">
+              <h1>Execução</h1>
+              <p>Executamos sua obra dentro do prazo e orçamento, garantindo a melhor aplicação dos seus recursos.</p>
+              <a href="#contato" class="btn-services">Saiba mais</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Slide 3: Serviços Técnicos -->
+        <div class="swiper-slide">
+          <div class="service-slide">
+            <div class="img-service">
+              <img src="../../imgs/service3.png" alt="Serviços Técnicos">
+            </div>
+            <div class="description-service">
+              <h1>Serviços Técnicos</h1>
+              <p>Elaboramos laudos, desenvolvemos projetos e realizamos ensaios para garantir a qualidade, viabilidade e segurança da sua obra.</p>
+              <a href="#contato" class="btn-services">Saiba mais</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
     </div>
+  </div>
+</div>
+
+    
 
     <section id="servicos">
         <div class="content-job">
@@ -251,31 +305,7 @@
                     </div>
                 </div>
             </div>
-            <script>
-                window.addEventListener('load', () => {
-                    const swiper = new Swiper('.swiper', {
-                        slidesPerView: 2,
-                        loop: true,
-                        loopedSlides: 13,
-                        autoplay: {
-                            delay: 3000,
-                            disableOnInteraction: false,
-                        },
-                        navigation: {
-                            nextEl: '.swiper-button-next',
-                            prevEl: '.swiper-button-prev',
-                        },
-                        breakpoints: {
-                            768: {
-                                slidesPerView: 3,
-                            },
-                            1024: {
-                                slidesPerView: 4,
-                            }
-                        }
-                    });
-                });
-            </script>
+            
         </div>
     </div>
 
@@ -359,7 +389,53 @@
     <a href="https://wa.me/5544997769303" class="whatsapp-float" target="_blank">
         <i class="fab fa-whatsapp"></i>
     </a>
+    <script>
+        // Inicializar ambos os carrousels
+document.addEventListener('DOMContentLoaded', function() {
+    // Carrousel de Serviços
+    const servicesSwiper = new Swiper('.services-swiper', {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: true,
+        autoplay: {
+            delay: 6000,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.services-swiper .swiper-pagination',
+            clickable: true,
+        },
+        effect: 'slide',
+        speed: 800,
+        grabCursor: true,
+    });
 
+    // Carrousel de Clientes
+    const clientsSwiper = new Swiper('.logos', {
+        slidesPerView: 2,
+        loop: true,
+        loopedSlides: 13,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        navigation: {
+            nextEl: '.clients-swiper .swiper-button-next',
+            prevEl: '.clients-swiper .swiper-button-prev',
+        },
+        breakpoints: {
+            768: {
+                slidesPerView: 3,
+            },
+            1024: {
+                slidesPerView: 4,
+            }
+        }
+    });
+
+    console.log('Carrousels inicializados com sucesso');
+});
+    </script>
     <script type="module" src="../../script.js"></script>
 
 </body>

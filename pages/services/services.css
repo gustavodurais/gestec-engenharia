@@ -1230,3 +1230,203 @@ html {
   width: 35px;
   height: 35px;
 }
+
+
+/* Container principal do carousel de serviços */
+.services-carousel-container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px 0;
+  background: #f8f9fa;
+}
+
+/* Container do swiper de serviços */
+.services-swiper {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.services-swiper .swiper-wrapper {
+  display: flex;
+  align-items: stretch;
+}
+
+.services-swiper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  height: auto !important;
+  min-height: 400px; /* altura mínima confortável */
+}
+
+.service-slide {
+  display: flex;
+  width: 100%;
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  height: 100%;
+  align-items: stretch;
+}
+
+.service-slide .img-service {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  padding: 10px;
+}
+
+.service-slide .img-service img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  max-height: 100%;
+}
+
+.service-slide .description-service {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.service-slide .description-service h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  font-weight: 700;
+}
+
+.service-slide .description-service p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  color: #666;
+}
+
+/* Botão do serviço */
+.service-slide .btn-services {
+  display: inline-block;
+  padding: 12px 30px;
+  background: #2c3e50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  text-align: center;
+  width: fit-content;
+  font-weight: 600;
+}
+
+.service-slide .btn-services:hover {
+  background: #1a252f;
+  transform: translateY(-2px);
+}
+
+/* Navegação do carousel */
+.services-swiper .swiper-button-prev,
+.services-swiper .swiper-button-next {
+  color: #2c3e50;
+  background: rgba(255, 255, 255, 0.9);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.services-swiper .swiper-button-prev:after,
+.services-swiper .swiper-button-next:after {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Paginação */
+.services-swiper .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: #bdc3c7;
+  opacity: 1;
+}
+
+.services-swiper .swiper-pagination-bullet-active {
+  background: #2c3e50;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 992px) {
+  .service-slide {
+    min-height: 350px;
+  }
+  
+  .service-slide .description-service {
+    padding: 30px;
+  }
+  
+  .service-slide .description-service h1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-carousel-container {
+    padding: 30px 0;
+  }
+  
+  .service-slide {
+    flex-direction: column;
+    min-height: auto;
+  }
+  
+  .service-slide .img-service {
+    height: 250px;
+    width: 100%;
+    flex: none;
+  }
+  
+  .service-slide .img-service img {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .service-slide .description-service {
+    padding: 25px;
+    flex: none;
+  }
+  
+  .service-slide .description-service h1 {
+    font-size: 1.6rem;
+  }
+  
+  .services-swiper .swiper-button-prev,
+  .services-swiper .swiper-button-next {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-swiper .swiper-slide {
+    padding: 10px;
+  }
+  
+  .service-slide .img-service {
+    height: 200px;
+  }
+  
+  .service-slide .description-service {
+    padding: 20px;
+  }
+  
+  .service-slide .description-service h1 {
+    font-size: 1.4rem;
+  }
+  
+  .service-slide .description-service p {
+    font-size: 1rem;
+  }
+}
