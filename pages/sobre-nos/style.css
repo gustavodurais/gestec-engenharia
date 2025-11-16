@@ -76,7 +76,7 @@ body {
 /*INICIO HEADER*/
 .header {
     width: 100%;
-    height: 6.25rem;
+    height: 5rem;
     background-color: var(--color-primary);
     display: flex;
     align-items: center;
@@ -1264,4 +1264,8 @@ body {
 .whatsapp-float img {
   width: 35px;
   height: 35px;
+}
+
+.justify {
+  text-align: justify;
 }
