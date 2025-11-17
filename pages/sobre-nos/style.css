@@ -496,7 +496,7 @@ body {
     margin: 5px 0 0;
     font-size: 0.9em;
     color: #d0d7e1;
-    font-family: 'inter';
+    font-family: 'lato-regular';
     max-width: 30rem;
     text-align: justify;
 }
@@ -626,14 +626,14 @@ body {
   color: #1a1a1a;
   margin-bottom: 20px;
   font-family: 'lato-black';
-  
+
 }
 
 .second-text-block p {
   color: #444;
   margin-bottom: 20px;
   line-height: 1.6;
-  font-family: 'inter';
+  font-family: 'lato-regular';
   text-align: justify;
 }
 
@@ -653,7 +653,7 @@ body {
   font-size: 0.95rem;
   color: #333;
   cursor: pointer;
-  font-family: 'inter';
+  font-family: 'regular-lato';
 }
 
 .section-checks li::before {
@@ -676,7 +676,7 @@ body {
 
 .second-services p {
   font-size: 0.95rem;
-  font-family: 'inter';
+  font-family: 'lato-regular';
   color: #444;
   margin-bottom: 20px;
   text-align: justify;
@@ -788,7 +788,7 @@ body {
 }
 
 .principles-container p {
-  font-family: 'inter';
+  font-family: 'lato-regular';
 }
 
 .tabs {
@@ -827,7 +827,7 @@ body {
 
 .principles-text {
   position: relative;
-  font-family: 'inter';
+  font-family: 'lato-regular';
   z-index: 1;
   font-size: 20px;
 }
@@ -922,7 +922,7 @@ body {
   font-weight: bold;
   letter-spacing: 1px;
   font-size: 18px;
-  font-family: 'inter';
+  font-family: 'lato-regular';
   margin-bottom: 5rem;
 }
 

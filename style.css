@@ -17,6 +17,7 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    font-family: "lato-regular";
 }
 
 html {
@@ -419,7 +420,6 @@ transition: all 300ms ease-in-out;
     left: 5rem;
     transform: translateY(-50%);
     font-size: 1.2rem;
-    font-family: 'lato-regular';
     max-width: 60rem;
 }
 
@@ -432,7 +432,6 @@ transition: all 300ms ease-in-out;
     left: 5rem;
     transform: translateY(-50%);
     font-size: 1.2em;
-    font-family: 'lato-regular';
     background-color: var(--color-primary);
     padding: 1rem;
     display: block;
@@ -656,11 +655,9 @@ transition: all 300ms ease-in-out;
 
 .description_about h2 {
     color: #ffff;
-    font-family: 'lato-bold';
 }
 
 .section_description p {
-    font-family: 'inter';
     color: #ffff;
 }
 
@@ -867,7 +864,6 @@ transition: all 300ms ease-in-out;
 
 .solution_item p {
   font-size: 1rem;
-  font-family: 'inter';
   font-weight: 300;
   line-height: 1.5;
 }
